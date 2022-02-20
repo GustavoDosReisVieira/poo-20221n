@@ -1,0 +1,30 @@
+package br.edu.fatecfranca.ex0;
+
+public class Carro {
+	String modelo;
+	int ano;
+	float velocidade;
+	boolean motor;
+	
+	// métodos
+	// Void não retorna nada (sem return)
+	void ligar(){ // ligando carro
+		motor = true;
+	}
+	
+	void desligar(){
+		motor = false;
+		velocidade = 0;
+	}
+	
+	void acelerar(float x){ // Acelerando o carro, o X recebe o quanto acelerou
+		velocidade += x;
+	}
+	void frear (float x) { // desacelerando o carro
+		velocidade -= x;
+	}
+	
+	void mostrar(){
+		System.out.println("Modelo " + modelo + " Ano " + ano + " Velocidade: " + velocidade + " Status motor: " + motor);
+	}
+}
