@@ -5,13 +5,13 @@ import javax.swing.JOptionPane;
 public class Testa {
 
 	public static void main(String[] args) {
-		System.out.println("Hoje é 18_02_2022");
+		System.out.println("Hoje ï¿½ 18_02_2022");
 		
 		
 		// criar um objeto 
 		Carro obj1 = new Carro();
 		obj1.modelo = JOptionPane.showInputDialog("Informe o modelo do carro: ");
-		obj1.ano = Integer.parseInt(JOptionPane.showInputDialog("Informe o ano do carro: ")); // O que o usuário digitar, retorna em String e o ano é Int
+		obj1.ano = Integer.parseInt(JOptionPane.showInputDialog("Informe o ano do carro: ")); // O que o usuï¿½rio digitar, retorna em String e o ano ï¿½ Int
 		obj1.velocidade = Float.parseFloat(JOptionPane.showInputDialog("Informe a velocidade atual do carro: "));
 		int resposta = JOptionPane.showConfirmDialog(null, "Carro com moto ligado? ");
 		obj1.motor = (resposta == JOptionPane.OK_OPTION);
